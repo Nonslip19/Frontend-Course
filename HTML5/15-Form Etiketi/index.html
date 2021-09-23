@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Formu Sayfası</title>
+    <style>
+        select {
+            width: 200px;
+        }
+
+        body {
+            background-color: #0A9E8E;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="POST">
+        İsim:
+        <input type="text" name="İsim" id="isim" placeholder="isim"> <br> <br>
+        Soyisim:
+        <input type="text" name="soyİsim" id="soyisim" placeholder="soyisim"> <br> <br>
+        Sevdiğiniz Spor:
+        <input type="checkbox" name="Futbol" id="futbol" value="Futbol"> Futbol
+        <input type="checkbox" name="Futbol" id="futbol" value="Basketbol"> Basketbol
+        <input type="checkbox" name="Futbol" id="futbol" value="Voleybol"> Voleybol <br> <br>
+        Cinsiyet:
+        <input type="radio" name="cinsiyet" id="Erkek" value="Erkek"> Erkek
+        <input type="radio" name="cinsiyet" id="Kadın" value="Kadın"> Kadın <br> <br>
+        Güvenlik Sorusu: Türkiye' nin başkenti neresidir? <br> <br>
+        <select name="Şehir" id="Şehir">
+            <option value="boş">Lütfen bir cevap seçiniz.</option>
+            <option value="Ankara">Ankara</option>
+            <option value="İzmir">İzmir</option>
+            <option value="İstanbul">İstanbul</option>
+        </select>
+        <br> <br>
+        <input type="submit" value="Kayıt Ol"><br> <br>
+        şifreyi giriniz: 
+        <input type="password" name="şifre" id="şifre">
+
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+body{
+    background-color: aqua;
+}
+h2{
+    border: 3px;
+    border-radius: 5%;
+    text-align: center;
+    text-decoration:ghostwhite;
+    text-shadow: gray;
+    text-decoration-style: solid;
+}
+div{
+    border: solid 3px ;
+    border-radius: 5%;
+    padding: 10px;
+    margin: 20px;
+    content: normal;
+}

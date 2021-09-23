@@ -1,0 +1,27 @@
+
+body{
+    background-color: hotpink;
+}
+h1{
+    text-align:center;
+    border-style:solid;
+    width: 300px;
+    border-width: 100%;
+    padding: 1%;
+    margin: auto;
+    
+}
+p{  font-size: 20px;
+    margin: 40px;
+    border-style: ridge;
+    border-color: wheat;
+    padding: 25px;
+    color: lavender;
+    border-bottom: 10px #2C2C2C solid ;
+    border-radius: 20px;
+    border-top: 10px turquoise double;
+    border-left-color: black;
+    border-right-color: red;
+    content: icon;
+
+}
