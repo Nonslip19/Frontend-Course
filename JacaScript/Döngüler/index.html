@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // FOR
+        /* var i = 0;
+        for ( i; i < 10; i++) {
+            document.write(i);
+        } */
+
+        // WHİLE
+        /* var sayi = 15;
+        while(sayi<=20){
+            console.log(sayi);
+            sayi++ ;
+        } */
+
+        // DO-WHİLE
+        /* var sayi = 20;
+        do {
+            console.log(sayi);
+            sayi--;
+        } while (sayi > 10); */
+
+        // Break (bu komuttan sonra döngüyü durdurup çıkar.)
+        /* var i = 0;
+        for ( i; i < 10; i++) {
+            if(i==5){
+                break;
+            }
+            console.log(i);
+        } */
+
+        //continue (o şartı sağlayan komutu çalıştırmaz bir sonrakinden devam eder.)
+        /* var i = 0;
+        for ( i; i < 10; i++) {
+            if(i==5){
+                continue;
+            }
+            console.log(i);
+        } */
+
+        var sayi = 30;
+        while(sayi >= 19){
+            if (sayi%5 == 0){
+                sayi--; //burada sayı azaltılmazsa 5 e bölünen sayıları aşağıda yazacak. 
+                continue;
+            }
+            console.log(sayi);
+            sayi--;
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
