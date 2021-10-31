@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Eleman Seçme</title>
+</head>
+
+<body>
+
+
+    <!-- ---------------------DENEME-1-------------------
+    <div class="title">
+
+    </div>
+
+    <div class="title">
+
+    </div>
+
+
+    <script>
+        var x = document.getElementsByClassName("title");
+        for (let i = 0; i < x.length; i++) {
+            var y = x[i].innerHTML = "Academy " + i;
+        }
+    </script> -->
+
+    <!--  ----------------DENEME-2---------------
+    <script>
+        var myBody = document.body;
+        for (let i = 0; i < 4; i++) {
+            myBody.innerHTML += "<p>Beyzan</p>"
+        }
+
+        var p = document.getElementsByTagName("p");
+        for (let i = 0; i < p.length; i++) {
+            p[i].innerHTML += " Moon"+(i+1);
+
+        }
+    </script> -->
+
+
+    <!--     -----DENEME-3--------
+    <div class="bolum1">
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <script>
+        var firstC = document.getElementsByClassName("bolum1")[0].firstChild;
+        var bolum = document.getElementsByClassName("bolum1")[0];
+        // firstChild ve lastChild in çalışabilmesi div ile p tagleri arasında boşluk olmaması gerekir. aksi halde boşluğu child olarak -text şeklinde algılar.
+
+        bolum.lastChild.innerHTML = "<h1 style=\"color:red;\">Water</h1>";
+
+        if (bolum.hasChildNodes()) {
+            /* hasChildNodes;bakmak istediğimiz yerde child olup olmadığını kontrol eder.  */
+            document.body.innerHTML += "child var"
+        } else {
+            document.body.innerHTML += "child yok"
+        }
+    </script> -->
+
+
+<!--      --------DENEME-4------ 
+
+    <div class="bolum2">
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+
+    <script>
+        var paragraphs = document.getElementsByTagName("p");
+        p_parent = paragraphs[0].parentNode; //parent elemente ulaşmayı sağlar.
+        p_parent.innerHTML +="<p>Paragraph 3</p>" 
+        var bolum_2 = document.getElementsByClassName("bolum2")[0];
+        bolum_2.firstElementChild.innerHTML = "Fİrst Child" // firstChild kullanırken tag lerin arasındaki boşlukları almamız gerekirken, firstElementChild da buna gerek kalmıyor. Boşlukları görmezden gelip elementleri seçebiliyoruz.
+    
+        console.log(bolum_2.childNodes); //Child' ların arasındaki boşlukları da sayar.
+        console.log(bolum_2.childElementCount); // sadece child elementlerini sayar, boşlukları saymaz.
+
+        for (let i = 0; i < bolum_2.childElementCount; i++){
+            bolum_2.getElementsByTagName("p")[i].innerHTML = "DEĞİŞTİRİLDİ";
+        }
+    </script> -->
+
+
+
+</body>
+
+</html>
