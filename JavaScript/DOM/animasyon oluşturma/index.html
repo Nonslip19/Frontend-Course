@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animasyon</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      #big_box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: relative;
+      }
+      #small_box {
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="big_box">
+      <div id="small_box"></div>
+    </div>
+
+    <script>
+      window.onload = function(){
+        var pozX = 0;
+        var pozY = 0;
+        var smallBox = document.getElementById("small_box");
+        var timer = setInterval(movement, 10);
+        function movement(){
+            if(pozX>=150){
+                pozY++;
+                smallBox.style.top = pozY + "px";
+                if(pozY>=150){
+                    clearInterval(timer);
+                }
+            }
+            else{
+                pozX++;
+                smallBox.style.left = pozX + "px";    
+            }
+        }
+      
+      };
+    </script>
+  </body>
 </html>
