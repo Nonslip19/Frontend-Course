@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes Object</title>
+</head>
+<body>
+    <script>
+        class User{
+            constructor(firstName, lastName, credit){
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.credit = credit;
+            }
+            fullName(){
+                let fullName = `${this.firstName} ${this.lastName} is my full name`;
+                return fullName;
+            }
+            editName(newname){
+                const myname = newname.split(" ");
+                this.firstName = myname[0];
+                this.lastName = myname[1];
+            }
+        }
+
+        const john = new User("john", "kaymaz", 25);
+        console.log(john.fullName()); //john kaymaz is my full name
+        john.editName("Johnny Anderson");
+        console.log(john.fullName()); //Jonny Anderson is my full name 
+
+
+    </script>
+</body>
+</html>

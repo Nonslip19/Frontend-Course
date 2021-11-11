@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Silme</title>
+</head>
+<body>
+    <div id="hakkimizda">
+        <p id="vizyon">Vizyonumuz</p>
+        <p id="Misyon">Misyonumuz</p>
+    </div>
+
+    <script>
+        var newParagraph = document.createElement("p");
+        var newText = document.createTextNode("Hedefimiz");
+        newParagraph.appendChild(newText);
+        
+       var hakkimizda = document.getElementById("hakkimizda");
+       var vizyon = document.getElementById("vizyon");
+       hakkimizda.appendChild(newParagraph);
+
+        hakkimizda.replaceChild(newParagraph, vizyon); //vizyon paragrafının yerine newpragraph yazdı. vizyon silindi.
+
+    </script>
+</body>
+</html>

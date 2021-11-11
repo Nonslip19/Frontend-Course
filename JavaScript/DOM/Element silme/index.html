@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Delete</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Anasayfa</li>
+            <li>Hakkınızda</li>
+            <li>İletişim</li>
+            <li>Vizyonumuz</li>
+        </ul>
+    </nav>
+
+    <script>
+        var navMenu = document.getElementsByTagName("nav")[0];
+        var sil = navMenu.childNodes[1].childNodes[5] //ilk childNodes <ul> yi verir. ikincisi ise boşlukları da görze alarak 5 inci eleman olarak iletişimi verir.
+        console.log(sil);
+        navMenu.childNodes[1].removeChild(sil);
+       
+    </script>
+</body>
+</html>
